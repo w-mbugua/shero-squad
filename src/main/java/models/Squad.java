@@ -10,4 +10,16 @@ public class Squad {
         this.size = size;
         this.cause = cause;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public String getCause() {
+        return cause;
+    }
 }

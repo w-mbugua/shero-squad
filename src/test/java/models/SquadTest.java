@@ -21,4 +21,13 @@ public class SquadTest {
         Squad squad = new Squad("title", 3, "cause");
         assertEquals(true, squad instanceof Squad);
     }
+
+    @Test
+    public void squadInstantiatesWithtitle_true() throws Exception {
+        Squad squad = new Squad("title", 3, "cause");
+        assertEquals("title", squad.getTitle());
+        assertEquals(3, squad.getSize());
+        assertEquals("cause", squad.getCause());
+
+    }
 }
