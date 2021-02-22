@@ -36,5 +36,20 @@ public class App {
             return new ModelAndView(model, "squad.hbs");
         }, new HandlebarsTemplateEngine());
 
+        post("/squad/new",(req,res)-> {
+            Map<String, Object> model = new HashMap<>();
+            String title = req.queryParams("title");
+            int size = Integer.parseInt(req.queryParams("size"));
+            String cause = req.queryParams("cause");
+
+            Squad newSquad = new Squad(title,size,cause);
+
+            //placeholder for success page variable
+            req.session().attribute("item",title);
+            model.put("item",req.session().attribute("item"));
+            return new ModelAndView(model,"success.hbs");
+        }, new HandlebarsTemplateEngine());
+
+
     }
 }
