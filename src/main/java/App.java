@@ -45,9 +45,14 @@ public class App {
             Squad newSquad = new Squad(title,size,cause);
 
             //placeholder for success page variable
-            req.session().attribute("item",title);
-            model.put("item",req.session().attribute("item"));
+            req.session().attribute("var",title);
+            model.put("var",req.session().attribute("item"));
             return new ModelAndView(model,"success.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/hero-form",(req, res) ->{
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(model, "hero-form.hbs");
         }, new HandlebarsTemplateEngine());
 
 
