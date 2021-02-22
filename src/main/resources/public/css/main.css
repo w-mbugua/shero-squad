@@ -12,6 +12,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 header {
   height: 60px;
   display: flex;
@@ -25,13 +26,23 @@ header ul {
   list-style: none;
   display: flex;
 }
+a:link {
+  text-decoration: none;
+  color: white;
+}
 
+a:visited {
+  text-decoration: none;
+}
 header ul li {
   width: 150px;
   height: 60px;
   line-height: 60px;
   text-align: center;
   cursor: pointer;
+}
+h1 {
+text-align: center;
 }
 .col-md-7 {
     margin-left: 0;
@@ -73,7 +84,30 @@ main button {
   background: linear-gradient(#dc2424, #4a569d);
   cursor: pointer;
 }
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
+}
+
+form input {
+border-radius: 10px;
+
+}
+
+.btn {
+  width: 70px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 17px;
+  background: linear-gradient(#dc2424, #4a569d);
+  cursor: pointer;
+}
 
 main button:hover{
   transform: translateY(5px);
