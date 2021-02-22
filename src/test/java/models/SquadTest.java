@@ -30,4 +30,11 @@ public class SquadTest {
         assertEquals("cause", squad.getCause());
 
     }
+
+    @Test
+    public void allSquadsAreCorrectlyReturned_2() {
+        Squad squad = new Squad("title1", 3, "cause1");
+        Squad otherSquad = new Squad("title2", 3, "cause2");
+        assertEquals(2, Squad.getAll().size());
+    }
 }

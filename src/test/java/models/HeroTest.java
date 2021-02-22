@@ -32,4 +32,12 @@ public class HeroTest {
 
     }
 
+    @Test
+    public void allHeroesAreCorrectlyReturned_2() {
+        Hero hero = new Hero("name", 30, "flying", "water");
+        Hero otherHero = new Hero("name", 40, "vision", "fire");
+
+        assertEquals(2, Hero.getAll().size());
+    }
+
 }
