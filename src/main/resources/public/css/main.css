@@ -7,12 +7,12 @@
 
 body {
   height: 100vh;
-  background: url(game.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
+  text-align: center;
 }
-
+label {
+width: 100px;
+display: inline-block;
+}
 header {
   height: 60px;
   display: flex;
@@ -26,14 +26,17 @@ header ul {
   list-style: none;
   display: flex;
 }
-a:link {
+a {
+   color: white;
   text-decoration: none;
-  color: white;
 }
-
+p a {
+color: brown;
+}
 a:visited {
   text-decoration: none;
 }
+
 header ul li {
   width: 150px;
   height: 60px;
@@ -41,7 +44,7 @@ header ul li {
   text-align: center;
   cursor: pointer;
 }
-h1 {
+h1, p {
 text-align: center;
 }
 .col-md-7 {
@@ -60,6 +63,24 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.card {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 1rem;
+  margin: 2rem 0rem;
+  padding: 1rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.list-group-item{
+padding: 10px
 }
 
 main p {
@@ -104,7 +125,7 @@ border-radius: 10px;
   outline: none;
   border-radius: 10px;
   margin-top: 10px;
-  font-size: 17px;
+  font-size: 13px;
   background: linear-gradient(#dc2424, #4a569d);
   cursor: pointer;
 }

@@ -1,17 +1,5 @@
 {{#partial "content"}}
-    <h1>Your {{ var }} Squad lives here!</h1>
 
-    <p><a href="/hero/form">Add Heroes</a></p>
-
-    {{#if squads }}
-        {{#each squads }}
-            <p>Squad Title: {{title}}
-                <br>
-                <a href="/squads/{{id}}">See Squad Details...</a>
-            </p>
-
-        {{/each}}
-    {{/if}}
     <div class="container">
         <div class="row">
             {{#if heroes}}
@@ -19,10 +7,10 @@
                     <div class="col-md-3">
                         <div class="card" style="width: 18rem;">
                             <img class=" img-thumbnail card-img-top" src="/images/spiderman.png" alt="Card image cap">
-                                    <!--        <div class="card-body">-->
-                                    <!--            <h5 class="card-title">Hero Details</h5>-->
-                                    <!--            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
-                                    <!--        </div>-->
+                            <!--        <div class="card-body">-->
+                            <!--            <h5 class="card-title">Hero Details</h5>-->
+                            <!--            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                            <!--        </div>-->
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">Name: {{name}}</li>
                                 <li class="list-group-item">Strength: {{ strength }}</li>

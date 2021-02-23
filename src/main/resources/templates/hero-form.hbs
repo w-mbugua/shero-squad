@@ -1,30 +1,48 @@
+
 {{#partial "content"}}
     <h1>CREATE A HERO</h1>
     <br>
     <br>
-    <form action="/hero/new" method="POST">
-        <h3>Enter Squad Details:</h3>
-        <div class="form-group">
-            <label for="name">Hero's Name</label>
-            <input id="name" name="name" type="text">
-        </div>
 
-        <div class="form-group">
-            <label for="age">Age</label>
-            <input id="age" name="age" type="text">
-        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="/images/herione17.jpg" alt="">
+            </div>
+            <!--main content-->
 
-        <div class="form-group">
-            <label for="strength">Strength:</label>
-            <input id="strength" name="strength" type="text">
-        </div>
+            <div class="col-md-6">
+                <form action="/hero/new" method="POST">
+                    <h3>Enter Hero Details:</h3>
+                    <div class="form-group">
+                        <label for="name">Hero's Name</label>
+                        <input id="name" name="name" type="text">
+                    </div>
 
-        <div class="form-group">
-            <label for="weak">Weakness:</label>
-            <input id="weakness" name="weakness" type="text">
-        </div>
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input id="age" name="age" type="text">
+                    </div>
 
-        <button type="submit" class="btn btn-default">Submit</button>
-    </form>
+                    <div class="form-group">
+                        <label for="strength">Strength:</label>
+                        <input id="strength" name="strength" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="weak">Weakness:</label>
+                        <input id="weakness" name="weakness" type="text">
+                    </div>
+
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-3">
+
+            </div>
+        </div>
+    </div>
+
 {{/partial}}
 {{> layout.hbs}}
+

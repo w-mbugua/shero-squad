@@ -46,15 +46,39 @@ public class App {
 
             //placeholder for success page variable
             req.session().attribute("var",title);
-            model.put("var",req.session().attribute("item"));
+            model.put("var",req.session().attribute("var"));
             return new ModelAndView(model,"success.hbs");
         }, new HandlebarsTemplateEngine());
 
-        get("/hero-form",(req, res) ->{
+        //get: show one squad
+        get("/squads/:id", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            int idOfPostToFind = Integer.parseInt(req.params(":id"));
+            Squad foundSquad = Squad.findById(idOfPostToFind);
+            model.put("squad", foundSquad);
+            return new ModelAndView(model, "squad-detail.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/hero/form",(req, res) ->{
             Map<String, Object> model = new HashMap<>();
             return new ModelAndView(model, "hero-form.hbs");
         }, new HandlebarsTemplateEngine());
 
+        post("/hero/new",(req, res) ->{
+            Map<String, Object> model = new HashMap<>();
+            String name = req.queryParams("name");
+            Integer age = Integer.parseInt(req.queryParams("age"));
+            String strength = req.queryParams("strength");
+            String weakness = req.queryParams("weakness");
+            Hero newHero = new Hero(name,age,strength,weakness);
+
+            //placeholder for success page variable
+            req.session().attribute("var",name);
+            model.put("var",req.session().attribute("var"));
+
+            model.put("newHero",newHero);
+            return new ModelAndView(model, "success.hbs");
+        }, new HandlebarsTemplateEngine());
 
     }
 }

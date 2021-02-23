@@ -37,4 +37,10 @@ public class SquadTest {
         Squad otherSquad = new Squad("title2", 3, "cause2");
         assertEquals(2, Squad.getAll().size());
     }
+
+    @Test
+    public void findReturnsCorrectSquad() throws Exception {
+        Squad squad = new Squad("title1", 3, "cause1");
+        assertEquals(1, Squad.findById(squad.getId()).getId());
+    }
 }
