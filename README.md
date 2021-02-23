@@ -1,11 +1,11 @@
 # Hero Squad
-Hero Squad is an app that allows to users to create squads of their favorite heroes. Link:
+Hero Squad is an app that allows to users to create squads of their favorite heroes.
 Link: https://shero-squad.herokuapp.com/
 
 ## Author
 Joy Mbugua
 
-## Technologies Used:
+## Technologies Used
 1. OpenJDK v11
 2. Gradle
 3. JUnit4
@@ -14,14 +14,14 @@ Joy Mbugua
 
 ## To use
 
-## Prerequistes:
+## 1. Prerequistes
 ```diff
 - Knowledge of java
 - An IDE - Intellij, Eclipse etc
 - Gradle
 ```
 
-## Steps
+## 2. Steps
 ```
 - Fork the project and git clone https://github.com/JoyMbugua/shero-squad.git or download as a zip folder
 - Open the project in an IDE and download te necessary build files
