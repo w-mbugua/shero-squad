@@ -34,7 +34,9 @@ public class Squad {
     public static ArrayList<Squad> getAll(){
         return instances;
     }
-
+    public static void clearAll(){
+        instances.clear();
+    }
     public static Squad findById(int id){
         return instances.get(id-1);
     }

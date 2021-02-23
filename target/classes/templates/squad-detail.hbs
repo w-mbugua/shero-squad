@@ -1,0 +1,33 @@
+{{#partial "content"}}
+
+    <div class="container">
+        <div class="row">
+            {{#if heroes}}
+                {{#each heroes}}
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class=" img-thumbnail card-img-top" src="/images/spiderman.png" alt="Card image cap">
+                            <!--        <div class="card-body">-->
+                            <!--            <h5 class="card-title">Hero Details</h5>-->
+                            <!--            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                            <!--        </div>-->
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Name: {{name}}</li>
+                                <li class="list-group-item">Strength: {{ strength }}</li>
+                                <li class="list-group-item">Weakness: {{ weakness }}</li>
+                                <li class="list-group-item">Age {{ age }}</li>
+                            </ul>
+                            <div class="card-body">
+                                <p><a href="/squad/form" class="card-link">Add To Squad</a></p>
+                                <p><a href="/hero-form" class="card-link">Create Another Hero</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                {{/each}}
+            {{/if}}
+        </div>
+    </div>
+{{/partial}}
+{{> layout.hbs}}
+
