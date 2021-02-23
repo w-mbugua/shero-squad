@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  text-align: center;
+}
+label {
+width: 100px;
+display: inline-block;
+}
+header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  background-color: #000;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+a {
+   color: white;
+  text-decoration: none;
+}
+p a {
+color: brown;
+}
+a:visited {
+  text-decoration: none;
+}
+
+header ul li {
+  width: 150px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+}
+h1, p {
+text-align: center;
+}
+.col-md-7 {
+    margin-left: 0;
+    text-align: center;
+}
+header ul li:hover{
+  background: linear-gradient(#dc2424, #4a569d);
+  color: #000;
+
+}
+
+main {
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 1rem;
+  margin: 2rem 0rem;
+  padding: 1rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.list-group-item{
+padding: 10px
+}
+
+main p {
+  width: 700px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 50px;
+  background-color: #000;
+  opacity: 0.5;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+}
+main button {
+  width: 250px;
+  height: 60px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  font-size: 30px;
+  background: linear-gradient(#dc2424, #4a569d);
+  cursor: pointer;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+form input {
+border-radius: 10px;
+
+}
+
+.btn {
+  width: 70px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 13px;
+  background: linear-gradient(#dc2424, #4a569d);
+  cursor: pointer;
+}
+
+main button:hover{
+  transform: translateY(5px);
+  transition: 0.2s;
+}

@@ -1,5 +1,6 @@
 # Hero Squad
-
+Hero Squad is an app that allows to users to create squads of their favorite heroes. Link:
+Link: https://shero-squad.herokuapp.com/
 
 ## Author
 Joy Mbugua
@@ -8,12 +9,25 @@ Joy Mbugua
 1. OpenJDK v11
 2. Gradle
 3. JUnit4
-4. Handlebars.js
+4. Java Spark Framework
+5. Handlebars
 
-## To use:
+## To use
+
+## Prerequistes:
+```diff
+- Knowledge of java
+- An IDE - Intellij, Eclipse etc
+- Gradle
 ```
-- Fork the project and git clone https://github.com/JoyMbugua/Ceaser-Cipher.git or download as a zip file
-- View in an IDE
+
+## Steps
+```
+- Fork the project and git clone https://github.com/JoyMbugua/shero-squad.git or download as a zip folder
+- Open the project in an IDE and download te necessary build files
+- cd into the project through the terminal
+- Run the command 'gradle run'
+- Navigate to http://0.0.0.0:4567/ 
 ```
 ## License
  MIT Copyright (c) 2021 JoyMbugua
