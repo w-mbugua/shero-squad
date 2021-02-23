@@ -14,6 +14,7 @@ public class SquadTest {
 
     @After
     public void tearDown() throws Exception {
+        Squad.clearAll();
     }
 
     @Test
